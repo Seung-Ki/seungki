@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<div class="container">
+
+    <h1>회원 삭제 확인</h1>
+    <br> <h3> 비밀번호를 입력하세요.</h3>
+    <form action="/home" method="post">
+        <div class="form-group">
+            <input type="text" id="password" name="password" placeholder="비밀번호를 입력하세요">
+        </div>
+
+            <button id="deleteMemberPwCon" type="submit">확인</button>
+    </form>
+    <button type="button"  onclick="back()">돌아가기</button>
+</div>
+</body>
+<script>
+    function back(){
+        history.back();
+    }
+</script>
+</html>

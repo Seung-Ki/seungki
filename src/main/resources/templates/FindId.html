@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<div class="container">
+
+    <h1>아이디 찾기</h1>
+    <form action="/login/FindId/FindIdCon" method="post">
+        <div class="form-group">
+            <label for="userName">이름</label>
+            <input type="text" id="userName" name="userName" placeholder="이름을 입력하세요">
+        </div>
+
+        <div class="form-group">
+            <label for="phoneNumber">휴대전화</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber">
+        </div>
+        <div>
+            <button id="FindId" type="submit">확인</button>
+        </div>
+    </form>
+    <button type="button"  onclick="back()">돌아가기</button>
+</div>
+</body>
+<script>
+    function back(){
+        history.back();
+    }
+</script>
+</html>

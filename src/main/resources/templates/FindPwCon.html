@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<div class="container">
+    <div>
+        <p th:text="'찾으시는 비밀번호는 ' + ${password} + '입니다'"
+           style="font-size: large;font-weight: bold;"></p>
+    </div>
+
+    <button type="button" onclick="location.href='/login'" >로그인</button>
+    <button type="button"  onclick="back()">돌아가기</button>
+</div>
+
+</body>
+<script>
+    function back(){
+        history.back();
+    }
+</script>
+</html>

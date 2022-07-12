@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+
+
+    <div>
+        <h1>내 정보</h1>
+        <p th:text="' 이름 : ' + ${userName}" style="font-size: large;font-weight: bold;"></p>
+        <p th:text="' 아이디 : ' + ${id}" style="font-size: large;font-weight: bold;"></p>
+        <p th:text="' 연락처 : ' + ${phoneNumber}" style="font-size: large;font-weight: bold;"></p>
+
+    </div>
+    <button type="button"  onclick="back()">돌아가기</button>
+
+    <form action="/MyPage/deleteMemberPwCon" method="post">
+        <div>
+            <button id="deleteMemberPwCon" type="submit">회원 탈퇴</button>
+        </div>
+    </form>
+
+
+</body>
+<script>
+    function back(){
+        history.back();
+    }
+</script>
+</html>
